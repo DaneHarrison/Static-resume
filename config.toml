@@ -1,0 +1,42 @@
+title = "Dane Wanke"
+theme = "hugo-resume"
+languageCode = "en-us"
+PygmentsCodeFences = false
+PygmentsCodeFencesGuessSyntax = true
+PygmentsStyle = "monokai"
+enableGitInfo = false
+
+[params]
+address = "Winnipeg, MB"
+email = ""
+favicon = ""
+firstName = "Dane"
+lastName = "Wanke"
+phone = ""
+profileImage = "img/TechChat.png"
+showEducation = false
+showExperience = true
+showOpenSource = false
+showProjects = true
+showPublications = false
+showQr = false
+showSkills = false
+
+[params.google]
+
+[params.google.analytics]
+trackerID = ""
+
+[[params.handles]]
+link = "https://www.linkedin.com/in/dane-wanke-b22b44250/"
+name = "LinkedIn"
+
+[[params.handles]]
+link = "https://github.com/DaneHarrison"
+name = "GitHub"
+
+[outputs]
+home = ["HTML", "JSON"]
+
+[taxonomies]
+tag = "tags"

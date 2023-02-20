@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agile development on Dane Wanke</title>
+    <link>/tags/agile-development/</link>
+    <description>Recent content in Agile development on Dane Wanke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/tags/agile-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EaTen</title>
+      <link>/projects/creations/eaten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/creations/eaten/</guid>
+      <description>Collaborative class project (A+) with short iterations and testing that nearly triples production code.</description>
+    </item>
+    
+  </channel>
+</rss>

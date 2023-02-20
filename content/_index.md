@@ -15,6 +15,6 @@ R.D Parker Collegiate Grade 12 bilingual diploma
 Royal Conservatory of Music Grade 10  
 
 ### Skills
-Languages: JavaScript, Node, HTML, CSS, SQL, Java, Python, C++, C  
-Technologies: Git, Vue, React, Express, Postgres, Prisma, Docker, Photoshop, Blender, OnShape, Cura  
-Competencies: Resilience, Emotional intelligence, Customer service, Organization, Thoroughness  
+**Languages**: JavaScript, Node, HTML, CSS, SQL, Java, Python, C++, C  
+**Technologies**: Git, Vue, React, Express, Postgres, Prisma, Docker, Photoshop, Blender, OnShape, Cura  
+**Competencies**: Resilience, Emotional intelligence, Customer service, Organization, Thoroughness  

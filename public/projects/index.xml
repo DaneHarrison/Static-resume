@@ -5,51 +5,7 @@
     <link>/projects/</link>
     <description>Recent content in Projects on Dane Wanke</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Digi-Menu</title>
-      <link>/projects/creations/digimenu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/creations/digimenu/</guid>
-      <description>A digital menu with comparing features focused on experimental design.</description>
-    </item>
-    
-    <item>
-      <title>EaTen</title>
-      <link>/projects/creations/eaten/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/creations/eaten/</guid>
-      <description>Collaborative class project (A+) with short iterations and testing that nearly triples production code.</description>
-    </item>
-    
-    <item>
-      <title>GroceryBot</title>
-      <link>/projects/creations/grocerybot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/creations/grocerybot/</guid>
-      <description>Large scale automated price comparison web service that deals with the Travelling Salesman Problem.</description>
-    </item>
-    
-    <item>
-      <title>M.O.B</title>
-      <link>/projects/creations/mob/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/creations/mob/</guid>
-      <description>An authentication system that identifies existing users faces using the eigenface algorithm.</description>
-    </item>
-    
-    <item>
-      <title>Project Y</title>
-      <link>/projects/creations/projecty/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/creations/projecty/</guid>
-      <description>Wearable display shirt that lights up according to audio frequency that focuses on best practices, swift development and testing cycles</description>
-    </item>
-    
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jan 2020 16:49:15 +0000</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

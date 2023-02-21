@@ -1,6 +1,6 @@
 title = "Dane Wanke"
 theme = "hugo-resume"
-baseURL = "https://https://daneharrison.github.io/Static-resume/"
+baseURL = "https://https://daneharrison.github.io/"
 languageCode = "en-us"
 PygmentsCodeFences = false
 PygmentsCodeFencesGuessSyntax = true

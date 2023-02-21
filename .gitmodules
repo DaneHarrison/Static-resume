@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"] 
+  path = hugo-resume
+  url = https://github.com/OGGampy/hugo-resume

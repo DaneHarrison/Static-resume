@@ -97,6 +97,8 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 
 14. Add the path we copies in *step 12* to your environment variables
 
+![setting the environment variable](gifs/settingVars.gif)
+
 15. Close and reopen VSCode and all active terminals
 
 16. Confirm hugo now works on your system by entering the following into any command line: hugo version
@@ -130,6 +132,8 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 23. Convert your resume into markdown
 
 24. Copy the theme's content folder and paste it in your own. Do not forget to collapse the theme folder affterwards to prevent potential mixup
+
+![copying the themes content folder into your own](gifs/copyingContent.gif)
 
 25. Modify the projects config.toml, note that changes required beyond pasting the contents below will be marked by ***:
 ```
@@ -214,6 +218,8 @@ tag = "tags"
 
 Copy paste the same description given above.
 ```
+![an example of what these modifications look like](gifs/finshedChanges.gif)
+
 32. Run the command: hugo server
 
 <br>
@@ -237,6 +243,8 @@ Copy paste the same description given above.
 
 38. Select and commit the boilerplate Hugo script to your repository
 
+![navigating through the options from Actions](gifs/actionsWalkthough.gif)
+
 39. Navigate to the Actions tab
 
 40. Click on the script we created in *step 38* displayed on the left hand side 
@@ -248,7 +256,7 @@ Copy paste the same description given above.
 
 ## Results
 ### https://daneharrison.github.io/
-
+![How to initially access your resume](gifs/finalProduct.gif)
 <br>
 <br>
 <br>
@@ -256,7 +264,7 @@ Copy paste the same description given above.
 # Appendix
 
 ## Authors and Acknowledgments
-Andrew Etter was my inspiration for creating this tutorial which relied upon Eddie Webbinaro's Hugo-Resume theme. I also wanted to thank Frieda Bi, Hamdi Elzard and Dirk Page for their time and provided feedback.
+Andrew Etter was my inspiration for creating this tutorial which relied upon Eddie Webbinaro's Hugo-Resume theme. I also wanted to thank Frieda Bi, Hamdi Elzard and Dirk Page for their time and feedback.
 
 
 <br>
@@ -282,4 +290,4 @@ PDFs, the most popular export format from word documents, do not work well with 
 
 ### 2. Does my GitHub repository need to use this particular naming convention?
 
-Yes, a repository that is set to **GitHubName**.github.io automatically enables GitHub pages. Although more importantly, the theme used in this tutorial modifies the sites URL. Therefore, using anything else may break links within your resume.
+For this tutorial yes, a repository that is set to **GitHubName**.github.io automatically enables GitHub pages. Although more importantly, the theme used in this tutorial modifies the sites URL. Therefore, using anything else may break links within your resume.

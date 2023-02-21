@@ -67,41 +67,39 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 <br>
 
 ### Creating your GitHub repository
-1. Navigate to the repositories tab on your GitHub account to click on "New" near the top right of the page
+1. Create a new repository from the respoistories tab on your GitHub account
 
 2. Name it **GitHubName**.github.io, note that **GitHubName** should be replaced by whatever yours may be
 
 3. Select the public visibility option
 
-4. Scroll to the end of the page to click "Create Repository"
+4. Click "Create Repository"
 
 ### Connecting VSCode to your GitHub
-5. Copy the HTTPS link provided in the blue Quick Setup box after your GitHub repository was created
+5. Copy the HTTPS link provided in the blue Quick Setup box after your repository is created
 
-6. Transition to VSCode
+6. Open VSCode
 
 7. Open a new terminal
 
-7. Navigate to a directory to store your code
+8. Navigate to a directory to store your code
 
-8. Type into the command line the following: git clone **link**, note that **link** should be replaced by the content we copied in *step 5*
+9. Type the following into the command line: git clone **link**, note that **link** should be replaced by the content we copied in *step 5*
 
 ### Configuring Hugo
-10. Naviage [here](https://go.dev/doc/install), although we will not need this resource, by clicking on download, the name of the file tells informs us of our computer's architecture
+10. Naviage [here](https://go.dev/doc/install), although we will not need this resource, by clicking on download, the name of the file tells us about our computer's architecture
 
-11. Navigate [here](https://github.com/gohugoio/hugo/releases) to find the most recent release of Hugo under *assets*. The release we want will match your computer's operating system and architecture, which we discovered in step 9
+11. Navigate [here](https://github.com/gohugoio/hugo/releases) to find the most recent release of Hugo under *assets*. The release we choose will match your computer's operating system and architecture, which we discovered in *step 10*
 
-12. Extract the downloaded content to the location of your choice 
+12. Copy the path of wherever the downloaded and extracted content is on your system
 
-13. Copy the path of the downloaded content
+13. Search up environment variables on your computer
 
-14. Search up environment variables on your computer
+14. Add the path we copies in *step 12* to your environment variables
 
-15. Add this path to your environment variables
+15. Close and reopen VSCode and all active terminals
 
-16. Close out and reopen VSCode and all active terminals
-
-17. Confirm hugo now works on your computer by entering the following into any command line: hugo version
+16. Confirm hugo now works on your system by entering the following into any command line: hugo version
 
 <br>
 <br>
@@ -110,20 +108,18 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 <br>
 
 ### Hugo setup script
-18. Transition to VSCode
+17. Open up your project folder in VSCode and its command line
 
-19. Open up your project folder and location in the VSCode command line interface
-
-20. Run the command: hugo new site **name**, where **name represents the name you would like to give the resumes static site**.
+18. Run the command: hugo new site **name**, where **name** will later be given to the static site we are creating.
 
 ### Loading the Hugo-Resume theme
-21. Navigate to the themes folder in VSCodes command line
+19. Navigate to the themes folder in VSCodes command line
 
-22. Run the command: git clone url https://github.com/OGGampy/hugo-resume
+20. Run the command: git clone https://github.com/OGGampy/hugo-resume
 
-23. Create a new file at the top level of the project folder called .gitmodules
+21. Create a new file at the top level of the project folder called .gitmodules
 
-24. Paste the following code snippet inside of the newly created .gitmodules :     
+22. Paste the following code snippet inside of the newly created .gitmodules:     
    
 ```  
    [submodule "path_to_submodule"] 
@@ -131,13 +127,11 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
        url = https://github.com/OGGampy/hugo-resume
 ```
 ### Making changes
-25. Convert your resume into markdown
+23. Convert your resume into markdown
 
-26. Copy the entire contents folder from the theme and paste into your own projects
+24. Copy the theme's content folder and paste it in your own. Do not forget to collapse the theme folder affterwards to prevent potential mixup
 
-27. Check that the themes folder is collapsed to prevent confusion between the themes files and your resumes
-
-28. Modify the projects config.toml, note that changes required beyond pasting the contents below will be marked by ***:
+25. Modify the projects config.toml, note that changes required beyond pasting the contents below will be marked by ***:
 ```
 title = "***your name here"
 theme = "hugo-resume"
@@ -183,9 +177,9 @@ home = ["HTML", "JSON"]
 [taxonomies]
 tag = "tags"
 ```
-29. Add experience.json into data 
+26. Add experience.json into the data folder 
 
-30. Format the content by the following:
+27. Format the content as follows:
 ```
 [
     {
@@ -198,17 +192,13 @@ tag = "tags"
 ]
 
 ```
-31. Edit the project folders _index.md to contain your personal information from your resume
+28. Edit the project folders _index.md to contain your personal information from your markdown resume
 
-32. Delete all the files in the contribution folder except _index.md
+29. Delete all the files in the contribution folder **except _index.md**
 
-33. Modify the content in the creations folder so there is a markdown file for every project you plan to add in addition to _index.md
+30. Adjust and rename the markdown files in the creations folder so there is a markdown file for every project you plan to add **in addition to _index.md**
 
-34. Rename these markdowns according to the projects they will represent
-
-35. Add photos you plan to use to showcase these projects into the static folder at the top of the projects folder
-
-36. Return to the creation mark down files and modify them as follows:
+31. Modify the markdown files from *steps 30* as follows:
 ```
 {
     "title": "your projects name",
@@ -216,7 +206,7 @@ tag = "tags"
 
     "description": "A description of your project.",
 
-    "image": "the name of the file you added in step 35 or blank if not applicable",
+    "image": "the name of the file you added in step 35",
     "link": "a link to your project",
     "tags": ["meaningful", "tags"]
 }
@@ -224,9 +214,7 @@ tag = "tags"
 
 Copy paste the same description given above.
 ```
-37. Run the command: hugo server
-
-38. Verify your resume is functional and has the information you intended
+32. Run the command: hugo server
 
 <br>
 <br>
@@ -235,35 +223,31 @@ Copy paste the same description given above.
 <br>
 
 ### Finishing touches
-39. Double check your personal information note that it will be difficult to remove from GitHub once posted
+33. Verify your information, note confidential information may be difficult to remove from GitHub once posted
 
-40. Change the base URL inside of config.toml to your GitHub repositories link. Note that this change will need to be reverted to work on hugo's development server which we ran in step 38
+34. Change baseURL inside of config.toml to your GitHub repositories link. Note that this change will needs to be reverted to rerun hugo's development server we used in *step 32*
 
 ### Commiting changes
-41. Commit your changes with an accurate message
+35. Commit your changes with an accurate message
 
-42. Push to your repository
+36. Push to your repository
 
 ### GitHub Actions
-43. Go to GitHub settings and ensure GitHub Pages is active
+37. Scroll down and select the GitHub Actions deployment method of GitHub Pages
 
-44. Scroll down and select the GitHub Actions deployment of GitHub Pages
+38. Select and commit the boilerplate Hugo script to your repository
 
-45. Select the boilerplate Hugo script
+39. Navigate to the Actions tab
 
-46. Commit this script to your repository
+40. Click on the script we created in *step 38* displayed on the left hand side 
 
-47. Go to the Actions tab
-
-48. Click on the name of the script we created which should be displayed in a menu on the left hand side 
-
-49. Click on run workflow in the blue box that appeared after step 48
+41. Click on run workflow in the blue box
 
 <br>
 <br>
 
 ## Results
-
+### https://daneharrison.github.io/
 
 <br>
 <br>
@@ -272,7 +256,7 @@ Copy paste the same description given above.
 # Appendix
 
 ## Authors and Acknowledgments
-Andrew Etter was a great inspiration for me creating this tutorial which heavily relied on the work Eddie Webbinaro put into his Hugo-Resume theme. I also wanted to thank Frieda Bi, Hamdi Elzard and Dirk Page for reviewing and providing their feedback.
+Andrew Etter was my inspiration for creating this tutorial which relied upon Eddie Webbinaro's Hugo-Resume theme. I also wanted to thank Frieda Bi, Hamdi Elzard and Dirk Page for their time and provided feedback.
 
 
 <br>
@@ -296,12 +280,6 @@ PDFs, the most popular export format from word documents, do not work well with 
 
 <br>
 
-### 2. Why is my resume not showing up?
+### 2. Does my GitHub repository need to use this particular naming convention?
 
-Sometimes using GitHub Actions and GitHub Pages can take a while. If this is the case, you can always check the status of the deployment under the Actions tab. If there are any issues clicking on the status symbol (either the red X, pulsing yellow circle or green check) will display more information enabling you to address potential issues.
-
-<br>
-
-### 3. Does my GitHub repository need to use this particular naming convention?
-
-**Yes**, a repository that is set to **GitHubName**.github.io, note that **GitHubName** should be replaced by whatever yours may be, automatically enables GitHub pages. Although more importantly, the theme we use modifies the sites URL. Therefore, using anything else potentially break links within your resume.
+Yes, a repository that is set to **GitHubName**.github.io automatically enables GitHub pages. Although more importantly, the theme used in this tutorial modifies the sites URL. Therefore, using anything else may break links within your resume.

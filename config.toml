@@ -1,5 +1,5 @@
 title = "Dane Wanke"
-theme = github.com/eddiewebb/hugo-resume
+theme = "github.com/eddiewebb/hugo-resume"
 baseURL = "https://https://daneharrison.github.io/Static-resume/"
 languageCode = "en-us"
 PygmentsCodeFences = false

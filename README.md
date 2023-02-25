@@ -5,7 +5,7 @@
 
 Having recently read through *Modern Technical Writing by Andrew Etter*, I wanted to share my new understanding of documentation and some of the tools available. Since the best way to learn is through *practical application*, we will be using VSCode, Hugo and Markdown to transform then host your resume onto GitHub pages. 
 
-Documentation is the secret to long term knowledge and easier collaboration, however, as software changes over time, so must its documentation. This can become a problem with convential methods. Enter static sites. Static sites are simple, portable, secure, easy to modify and distribute as changes are made. Furthermore, as projects scale static site generators like Hugo can address their growing complexity by offering a more modular, automatable and customizable process. 
+Documentation is the secret to long term knowledge and easier collaboration, however, as software changes over time, so must its documentation. This can become a problem with more traditional methods. Enter static sites. Static sites are simple, portable, secure, easy to modify and distribute as changes are made. Furthermore, as projects scale static site generators like Hugo can address their growing complexity by offering a more modular, automatable and customizable process. 
 
 <br>
 
@@ -26,7 +26,7 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 ## Requirements
 - Knowledge of basic command line manipulation
 - Knowledge and access to VSCode
-- Knowledge of markdown
+- Knowledge of Markdown
 - Access to Git
 - A GitHub account
 - A resume
@@ -129,7 +129,7 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
        url = https://github.com/OGGampy/hugo-resume
 ```
 ### Making changes
-23. Convert your resume into markdown
+23. Convert your resume into Markdown
 
 24. Copy the theme's content folder and paste it in your own. Do not forget to collapse the theme folder affterwards to prevent potential mixup
 
@@ -196,13 +196,13 @@ tag = "tags"
 ]
 
 ```
-28. Edit the project folders _index.md to contain your personal information from your markdown resume
+28. Edit the project folders _index.md to contain your personal information from your Markdown resume
 
 29. Delete all the files in the contribution folder **except _index.md**
 
-30. Adjust and rename the markdown files in the creations folder so there is a markdown file for every project you plan to add **in addition to _index.md**
+30. Adjust and rename the Markdown files in the creations folder so there is a Markdown file for every project you plan to add **in addition to _index.md**
 
-31. Modify the markdown files from *steps 30* as follows:
+31. Modify the Markdown files from *steps 30* as follows:
 ```
 {
     "title": "your projects name",
@@ -284,7 +284,7 @@ Andrew Etter was my inspiration for creating this tutorial which relied upon Edd
 ## FAQs
 ### 1. Why is Markdown better than a word processor?
 
-PDFs, the most popular export format from word documents, do not work well with version control. Version control is a necessity that allows easier modification and distribution of product documentation. Therefore, it makes more sense to use Markdown which is simple to use, well supported and integrates web technologies like HTML and CSS for further customizability.
+PDFs, the most popular export format from word documents, do not work well with version control. Version control is a necessity that allows easier modification and distribution of product documentation. Therefore, it makes more sense to use Markdown which is simple to use, well supported and integrates web technologies like HTML and CSS for familiar customizability.
 
 <br>
 

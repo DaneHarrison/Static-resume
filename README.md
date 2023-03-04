@@ -1,20 +1,19 @@
 <div align="center">
-<h1>Publishing your resume to GitHub Pages</h1>
+<h1>Publishing your resume to GitHub</h1>
 
 </div>
 
-Having recently read through *Modern Technical Writing by Andrew Etter*, I wanted to share my new understanding of documentation and some of the tools available. Since the best way to learn is through *practical application*, we will be using VSCode, Hugo and Markdown to transform then host your resume onto GitHub pages. 
+Having recently read through *Modern Technical Writing by Andrew Etter*, I wanted to share my new understanding of documentation and the tools available. Since the best way to learn is through *practical application*, we will be using VSCode, Hugo and Markdown on Windows to host your resume on GitHub Pages. 
 
-Documentation is the secret to long term knowledge and easier collaboration, however, as software changes over time, so must its documentation. This can become a problem with more traditional methods. Enter static sites. Static sites are simple, portable, secure, easy to modify and distribute as changes are made. Furthermore, as projects scale static site generators like Hugo can address their growing complexity by offering a more modular, automatable and customizable process. 
+Documentation is essential for long term knowledge and streamlined collaboration, however, as products change, so must their documentation. This can become problematic with traditional methods. Enter static sites. Static sites are portable, secure, easy to modify and distribute online as changes are made. Additionally, as projects scale static site generators like Hugo can address growing complexities by offering more modular, scriptable and customizable processes. 
 
 <br>
 
-These notes have careful consideration to the Etters suggested practices: 
-- Basic Functional Documentation
+These notes carefully consider Etter's suggested practices: 
+- Basic functional documentation
 - Explorative nature of documentation
-- Careful consideration to everyone's time
-- The role of modern technologies
-- Making content beautiful, discoverable, scannable, and searchable
+- Careful consideration of peoples time and inclusion of code examples
+- The role of modern technology
 
 If you wish to contribute, all suggestion are welcome by [pull request](https://github.com/DaneHarrison/daneharrison.github.io/pulls).
 
@@ -35,7 +34,7 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 
 ## Overview
 [Setting up your environment](#setting-up-your-environment)
-- [Creating your GitHub repository](#creating-your-github-repository)
+- [Creating your repository](#creating-your-repository)
 - [Connecting VSCode to your GitHub](#connecting-vscode-to-your-github)
 - [Configuring Hugo](#configuring-hugo)
 
@@ -66,7 +65,7 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 ## Setting up your environment
 <br>
 
-### Creating your GitHub repository
+### Creating your repository
 1. Create a new repository from the respoistories tab on your GitHub account
 
 2. Name it **GitHubName**.github.io, note that **GitHubName** should be replaced by whatever yours may be
@@ -76,32 +75,30 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 4. Click "Create Repository"
 
 ### Connecting VSCode to your GitHub
-5. Copy the HTTPS link provided in the blue Quick Setup box after your repository is created
+5. Copy the HTTPS link provided in the blue Quick Setup box after creating the repository
 
-6. Open VSCode
+6. Open VSCode and a terminal
 
-7. Open a new terminal
+7. Navigate to a directory to store your code
 
-8. Navigate to a directory to store your code
-
-9. Type the following into the command line: git clone **link**, note that **link** should be replaced by the content we copied in *step 5*
+8. Type the following into the command line: git clone **link**, note that **link** should be replaced by the content we copied in *step 5*
 
 ### Configuring Hugo
-10. Naviage [here](https://go.dev/doc/install), although we will not need this resource, by clicking on download, the name of the file tells us about our computer's architecture
+9. Naviage [here](https://go.dev/doc/install), although we will not need this resource, by clicking on download, the name of the file infroms us of our computer's architecture
 
-11. Navigate [here](https://github.com/gohugoio/hugo/releases) to find the most recent release of Hugo under *assets*. The release we choose will match your computer's operating system and architecture, which we discovered in *step 10*
+10. Navigate [here](https://github.com/gohugoio/hugo/releases) to find the most recent release of Hugo under *assets*. The release we choose will match your computer's operating system and architecture, which we discovered in *step 9*
 
-12. Copy the path of wherever the downloaded and extracted content is on your system
+11. Copy the path of wherever the downloaded and extracted content is on your system
 
-13. Search up environment variables on your computer
+12. Search up environment variables on your computer
 
-14. Add the path we copies in *step 12* to your environment variables
+13. Add the path we copied in *step 11* to your environments path
 
 ![setting the environment variable](gifs/settingVars.gif)
 
-15. Close and reopen VSCode and all active terminals
+14. Close and reopen VSCode and all active terminals
 
-16. Confirm hugo now works on your system by entering the following into any command line: hugo version
+15. Confirm hugo now works on your system by entering the following into any command line: hugo version
 
 <br>
 <br>
@@ -110,18 +107,18 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 <br>
 
 ### Hugo setup script
-17. Open up your project folder in VSCode and its command line
+16. Open up your project folder in VSCode and a terminal
 
-18. Run the command: hugo new site **name**, where **name** will later be given to the static site we are creating.
+17. Run the command: hugo new site **name**, where **name** will later be given to the static site we are creating.
 
 ### Loading the Hugo-Resume theme
-19. Navigate to the themes folder in VSCodes command line
+18. Navigate to the themes folder in VSCodes command line
 
-20. Run the command: git clone https://github.com/OGGampy/hugo-resume
+19. Run the command: git clone https://github.com/OGGampy/hugo-resume
 
-21. Create a new file at the top level of the project folder called .gitmodules
+20. Create a new file at the top level of the project folder called .gitmodules
 
-22. Paste the following code snippet inside of the newly created .gitmodules:     
+21. Paste the following code snippet inside of the newly created .gitmodules:     
    
 ```  
    [submodule "path_to_submodule"] 
@@ -129,13 +126,13 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
        url = https://github.com/OGGampy/hugo-resume
 ```
 ### Making changes
-23. Convert your resume into Markdown
+22. Convert your resume into Markdown
 
-24. Copy the theme's content folder and paste it in your own. Do not forget to collapse the theme folder affterwards to prevent potential mixup
+23. Copy the theme's content folder and paste it in your own. Do not forget to collapse the theme folder affterwards to prevent potential mixup
 
 ![copying the themes content folder into your own](gifs/copyingContent.gif)
 
-25. Modify the projects config.toml, note that changes required beyond pasting the contents below will be marked by ***:
+24. Modify the projects config.toml, note that changes required beyond pasting the contents below will be marked by ***:
 ```
 title = "***your name here"
 theme = "hugo-resume"
@@ -181,9 +178,9 @@ home = ["HTML", "JSON"]
 [taxonomies]
 tag = "tags"
 ```
-26. Add experience.json into the data folder 
+25. Add experience.json into the data folder 
 
-27. Format the content as follows:
+26. Format the content as follows:
 ```
 [
     {
@@ -196,13 +193,13 @@ tag = "tags"
 ]
 
 ```
-28. Edit the project folders _index.md to contain your personal information from your Markdown resume
+27. Edit the project folders _index.md to contain your personal information from your Markdown resume
 
-29. Delete all the files in the contribution folder **except _index.md**
+28. Delete all the files in the contribution folder **except _index.md**
 
-30. Adjust and rename the Markdown files in the creations folder so there is a Markdown file for every project you plan to add **in addition to _index.md**
+29. Adjust and rename the Markdown files in the creations folder so there is a Markdown file for every project you plan to add **in addition to _index.md**
 
-31. Modify the Markdown files from *steps 30* as follows:
+30. Modify the Markdown files from *steps 29* as follows:
 ```
 {
     "title": "your projects name",
@@ -210,17 +207,17 @@ tag = "tags"
 
     "description": "A description of your project.",
 
-    "image": "the name of the file you added in step 35",
-    "link": "a link to your project",
+    "image": "images go into the static folder, they can be linked as such: fileName.extension",
+    "link": "link to your project",
     "tags": ["meaningful", "tags"]
 }
 
 
 Copy paste the same description given above.
 ```
-![an example of what these modifications look like](gifs/finshedChanges.gif)
+![an example of potential modifications](gifs/finshedChanges.gif)
 
-32. Run the command: hugo server
+31. Run the command: hugo server
 
 <br>
 <br>
@@ -229,27 +226,27 @@ Copy paste the same description given above.
 <br>
 
 ### Finishing touches
-33. Verify your information, note confidential information may be difficult to remove from GitHub once posted
+32. Verify your content, note confidential information may be difficult to remove once posted
 
-34. Change baseURL inside of config.toml to your GitHub repositories link. Note that this change will needs to be reverted to rerun hugo's development server we used in *step 32*
+33. Change baseURL inside of config.toml to your GitHub repositories link. **Note that this change will needs to be reverted to rerun hugo's development server used in *step 31***
 
 ### Commiting changes
-35. Commit your changes with an accurate message
+34. Commit your changes with a meaningful message
 
-36. Push to your repository
+35. Push to your repository
 
 ### GitHub Actions
-37. Scroll down and select the GitHub Actions deployment method of GitHub Pages
+36. Scroll down and select the GitHub Actions deployment method for GitHub Pages
 
-38. Select and commit the boilerplate Hugo script to your repository
+37. Select and commit the boilerplate Hugo script to your repository
 
 ![navigating through the options from Actions](gifs/actionsWalkthough.gif)
 
-39. Navigate to the Actions tab
+38. Navigate to the Actions tab
 
-40. Click on the script we created in *step 38* displayed on the left hand side 
+39. Click on the script created in *step 37* displayed on the left hand side 
 
-41. Click on run workflow in the blue box
+40. Click on run workflow in the blue box
 
 <br>
 <br>
@@ -264,7 +261,7 @@ Copy paste the same description given above.
 # Appendix
 
 ## Authors and Acknowledgments
-Andrew Etter was my inspiration for creating this tutorial which relied upon Eddie Webbinaro's Hugo-Resume theme. I also wanted to thank Frieda Bi, Hamdi Elzard and Dirk Page for their time and feedback.
+Andrew Etter was inspiration for creating this tutorial that relied on Eddie Webbinaro's Hugo-Resume theme. I also wanted to thank Frieda Bi, Hamdi Elzard and Dirk Page for their time and feedback.
 
 
 <br>
@@ -284,10 +281,10 @@ Andrew Etter was my inspiration for creating this tutorial which relied upon Edd
 ## FAQs
 ### 1. Why is Markdown better than a word processor?
 
-PDFs, the most popular export format from word documents, do not work well with version control. Version control is a necessity that allows easier modification and distribution of product documentation. Therefore, it makes more sense to use Markdown which is simple to use, well supported and integrates web technologies like HTML and CSS for familiar customizability.
+There are many strengths in choosing Markdown over a word processor for writting docuemntation. While PDFs are universal they cannot be modified and files that are application specific have difficulties with version control. Version control is a necessity that allows easier modification and distribution of documentation. Therefore, it makes more sense to use Markdown which is simple to use, well supported and integrates web technologies like HTML and CSS for familiar customizability.
 
 <br>
 
 ### 2. Does my GitHub repository need to use this particular naming convention?
 
-For this tutorial yes, a repository that is set to **GitHubName**.github.io automatically enables GitHub pages. Although more importantly, the theme used in this tutorial modifies the sites URL. Therefore, using anything else may break links within your resume.
+For this tutorial, yes, a repository that is set to **GitHubName**.github.io automatically enables GitHub pages. Although more importantly, the theme used in this tutorial modifies the sites URL. Therefore, using anything else may break links within your resume.

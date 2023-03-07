@@ -180,7 +180,7 @@ tag = "tags"
 ```
 25. Add experience.json into the data folder 
 
-26. Format the content as follows:
+26. Format the file as follows:
 ```
 [
     {

@@ -23,12 +23,14 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 <br>
 
 ## Requirements
+**Note help to satisfy requirements is provided under <u>[more resources](#more-resources)**</u>
 - Knowledge of basic command line manipulation
 - Knowledge and access to VSCode
 - Knowledge of Markdown
 - Access to Git
 - A GitHub account
 - A resume
+
 
 <br>
 
@@ -81,12 +83,12 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 
 7. Navigate to a directory to store your code
 
-8. Type the following into the command line: git clone **link**, note that **link** should be replaced by the content we copied in *step 5*
+8. Type the following into the command line: `git clone link`, note that **link** should be replaced by the content we copied in *step 5*
 
 ### Configuring Hugo
-9. Naviage [here](https://go.dev/doc/install), although we will not need this resource, by clicking on download, the name of the file infroms us of our computer's architecture
+9. Navigate to [Go's download page](https://go.dev/doc/install). Although it will not be needed, by clicking on download, the name of the file informs us of our computer's architecture
 
-10. Navigate [here](https://github.com/gohugoio/hugo/releases) to find the most recent release of Hugo under *assets*. The release we choose will match your computer's operating system and architecture, which we discovered in *step 9*
+10. Navigate to [Hugo's download page](https://github.com/gohugoio/hugo/releases) and find the most recent release of Hugo under *assets*. The release we choose will match your computer's operating system and architecture, which we discovered in *step 9*
 
 11. Copy the path of wherever the downloaded and extracted content is on your system
 
@@ -98,7 +100,7 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 
 14. Close and reopen VSCode and all active terminals
 
-15. Confirm hugo now works on your system by entering the following into any command line: hugo version
+15. Confirm hugo now works on your system by entering the following into any command line: `hugo version`
 
 <br>
 <br>
@@ -109,12 +111,12 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 ### Hugo setup script
 16. Open up your project folder in VSCode and a terminal
 
-17. Run the command: hugo new site **name**, where **name** will later be given to the static site we are creating.
+17. Run the command: `hugo new site name`, where **name** will later be given to the static site we are creating.
 
 ### Loading the Hugo-Resume theme
 18. Navigate to the themes folder in VSCodes command line
 
-19. Run the command: git clone https://github.com/OGGampy/hugo-resume
+19. Run the command: `git clone https://github.com/OGGampy/hugo-resume`
 
 20. Create a new file at the top level of the project folder called .gitmodules
 
@@ -128,11 +130,11 @@ If you wish to contribute, all suggestion are welcome by [pull request](https://
 ### Making changes
 22. Convert your resume into Markdown
 
-23. Copy the theme's content folder and paste it in your own. Do not forget to collapse the theme folder affterwards to prevent potential mixup
+23. Copy the theme's content folder and paste it in your own. **Do not forget to collapse the theme folder affterwards to prevent potential mixup**
 
 ![copying the themes content folder into your own](gifs/copyingContent.gif)
 
-24. Modify the projects config.toml, note that changes required beyond pasting the contents below will be marked by ***:
+24. Modify the projects config.toml, note that changes required beyond pasting the contents below start with ***:
 ```
 title = "***your name here"
 theme = "hugo-resume"
@@ -217,7 +219,7 @@ Copy paste the same description given above.
 ```
 ![an example of potential modifications](gifs/finshedChanges.gif)
 
-31. Run the command: hugo server
+31. Run the command: `hugo server`
 
 <br>
 <br>
@@ -226,7 +228,7 @@ Copy paste the same description given above.
 <br>
 
 ### Finishing touches
-32. Verify your content, note confidential information may be difficult to remove once posted
+32. Verify your content, note **confidential information may be difficult to remove once posted**
 
 33. Change baseURL inside of config.toml to your GitHub repositories link. **Note that this change will needs to be reverted to rerun hugo's development server used in *step 31***
 
@@ -281,10 +283,10 @@ Andrew Etter was inspiration for creating this tutorial that relied on Eddie Web
 ## FAQs
 ### 1. Why is Markdown better than a word processor?
 
-There are many strengths in choosing Markdown over a word processor for writting docuemntation. While PDFs are universal they cannot be modified and files that are application specific have difficulties with version control. Version control is a necessity that allows easier modification and distribution of documentation. Therefore, it makes more sense to use Markdown which is simple to use, well supported and integrates web technologies like HTML and CSS for familiar customizability.
+There are many strengths in choosing Markdown over a word processor for writting docuemntation. While PDFs are universal they cannot easily be modified and files that are application specific have difficulties with version control. Version control is a necessity that allows easier modification and distribution of documentation. Therefore, it makes more sense to use Markdown which is simple to use, well supported and integrates web technologies like HTML and CSS for familiar customizability.
 
 <br>
 
 ### 2. Does my GitHub repository need to use this particular naming convention?
 
-For this tutorial, yes, a repository that is set to **GitHubName**.github.io automatically enables GitHub pages. Although more importantly, the theme used in this tutorial modifies the sites URL. Therefore, using anything else may break links within your resume.
+For this tutorial, **yes**, a repository that is set to **GitHubName**.github.io automatically enables GitHub pages. Although more importantly, the theme used in this tutorial modifies the sites URL. Therefore, using anything else may break links within your resume.
